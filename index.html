@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiệm Ăn Online</title>
+    <style>
+        :root { --primary-color: #ff4757; --dark-color: #2f3542; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background: #f1f2f6; }
+        header { background: var(--primary-color); color: white; text-align: center; padding: 2rem; }
+        .container { max-width: 1000px; margin: 2rem auto; padding: 0 1rem; }
+        
+        .menu-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 20px; 
+        }
+        
+        .food-card { 
+            background: white; 
+            border-radius: 15px; 
+            overflow: hidden; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .food-card:hover { transform: translateY(-5px); }
+        .food-card img { width: 100%; height: 200px; object-fit: cover; }
+        
+        .food-info { padding: 1.5rem; text-align: center; }
+        .price { color: var(--primary-color); font-weight: bold; font-size: 1.2rem; }
+        
+        .btn-order {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            padding: 10px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        footer { text-align: center; padding: 2rem; color: #747d8c; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🍔 TIỆM ĂN DELICIOUS</h1>
+    <p>Giao hàng nhanh chóng - Món ăn chất lượng</p>
+</header>
+
+<div class="container">
+    <div class="menu-grid">
+        <!-- Món 1 -->
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500" alt="Burger">
+            <div class="food-info">
+                <h3>Burger Bò Đặc Biệt</h3>
+                <p class="price">55.000đ</p>
+                <a href="LINK_GOOGLE_FORM_CUA_BAN" target="_blank" class="btn-order">Đặt hàng ngay</a>
+            </div>
+        </div>
+
+        <!-- Món 2 -->
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500" alt="Pizza">
+            <div class="food-info">
+                <h3>Pizza Hải Sản</h3>
+                <p class="price">120.000đ</p>
+                <a href="LINK_GOOGLE_FORM_CUA_BAN" target="_blank" class="btn-order">Đặt hàng ngay</a>
+            </div>
+        </div>
+
+        <!-- Món 3 -->
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=500" alt="BBQ">
+            <div class="food-info">
+                <h3>Thịt Nướng BBQ</h3>
+                <p class="price">85.000đ</p>
+                <a href="LINK_GOOGLE_FORM_CUA_BAN" target="_blank" class="btn-order">Đặt hàng ngay</a>
+            </div>
+        </div>
+
+        <!-- Món 4 -->
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500" alt="Salad">
+            <div class="food-info">
+                <h3>Salad Ức Gà</h3>
+                <p class="price">45.000đ</p>
+                <a href="LINK_GOOGLE_FORM_CUA_BAN" target="_blank" class="btn-order">Đặt hàng ngay</a>
+            </div>
+        </div>
+
+        <!-- Món 5 -->
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1544333346-64e4fe18ecd7?w=500" alt="Sushi">
+            <div class="food-info">
+                <h3>Combo Sushi</h3>
+                <p class="price">150.000đ</p>
+                <a href="https://docs.google.com/forms/d/11834HlCNImuaOJf0P-_gOhAFuODnSGBsBh-RPUQrRvM/edit" target="_blank" class="btn-order">Đặt hàng ngay</a>
+            </div>
+        </div>
+
+        <!-- Món 6 -->
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=500" alt="Fried Chicken">
+            <div class="food-info">
+                <h3>Gà Rán Giòn Rụm</h3>
+                <p class="price">60.000đ</p>
+                <a href="LINK_GOOGLE_FORM_CUA_BAN" target="_blank" class="btn-order">Đặt hàng ngay</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 Tiệm Ăn Delicious. Powered by Google Forms.</p>
+</footer>
+
+</body>
+</html>
